@@ -1,0 +1,752 @@
+body {
+      font-family: "Open Sans",sans-serif;
+}
+.top-bar{
+  background: rgba(88, 114, 133, 0.7);
+  position: relative;
+  z-index: 1000;
+}
+.top-bar ul{
+  background: rgba(0,0,0,0);
+}
+
+.sticky {
+  width: 100%;
+}
+
+.logo {
+	height: 60px;
+  background-color: white;
+}
+
+
+
+/*.site-nav {
+	float:right;
+	margin: 10px;
+}
+.site-nav ul {
+	list-style:none;
+}
+.site-nav li {
+	display:inline-block;
+	margin-right:0.5em;
+	font-size: 12px;
+}
+.site-nav a {
+	color:#0aa;
+	text-decoration:none;
+  padding: 10px;
+  transition: .6s background; 
+}
+.site-nav a:hover {
+  text-decoration: underline;
+  background:rgba(0,155,155,0.9);
+}*/
+
+/*.top-bar-left a img {
+  display: inline-block;
+  float:left;
+  font-size: 0.7rem;
+}*/
+
+.top-bar-left a img:hover{
+/*  display: inline-block;*/
+  background: black;
+/*  line-height: 50px;*/
+}
+
+.top-bar .uvp {
+  float:left;
+  display: inline-block;
+  font-size: 0.9rem;
+  padding-left: 5px;
+  margin: 0px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.uvp p {
+  font-size: 0.9rem;
+}
+/*.top-bar-right a {
+  color: rgba(0,155,155,0.9);
+  font-size: 0.8rem;
+  font-weight: 400;
+}*/
+
+
+/* Effect 20: 3D side */
+
+.color-1 {
+  background: #435a6b;
+}
+
+li a {
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+/*  letter-spacing: 1px;*/
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  font-size: 1em;
+}
+
+li a:hover,
+li a:focus {
+  outline: none;
+}
+
+.cl-effect-20 li {
+/*  line-height: 1.5rem;*/
+}
+.cl-effect-20 li a {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+}
+
+.cl-effect-20 a span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 15px 0;
+  background: #587285;
+  opacity: 0.8;
+  font-size: 0.8rem;
+  line-height: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: center;
+  box-shadow: inset 0 3px #2f4351;
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
+  transition: background 0.6s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+}
+
+.cl-effect-20 a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  color: #2f4351;
+  content: attr(data-hover);
+  -webkit-transform: rotateX(270deg);
+  -moz-transform: rotateX(270deg);
+  transform: rotateX(270deg);
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  transform-origin: 0 0;
+  pointer-events: none;
+}
+
+.cl-effect-20 a:hover span,
+.cl-effect-20 a:focus span {
+  background: #2f4351;
+/*  padding: 3px 15px 0;*/
+  text-align: center;
+  vertical-align: center;
+
+/*  color: #2f4351;*/
+}
+
+.cl-effect-20 a:hover span::before,
+.cl-effect-20 a:focus span::before {
+  -webkit-transform: rotateX(10deg);  
+  -moz-transform: rotateX(10deg);
+  transform: rotateX(10deg);
+}
+
+/*-----------------------------*/
+
+/*.top-bar-right a:hover{
+  background: white;
+}*/
+
+
+/*.top-bar-right .nav-icon:hover {
+  border:none;
+  height:1.4em; 
+}*/
+
+.nav-icon:hover {
+  border:none;
+  height:1.4em; 
+  background:white;
+}
+
+.highlight a {
+  margin: 0 10px;
+  color: rgb(85, 255, 0);
+  border-radius: 5px;
+  border:3px solid rgb(85, 255, 0);
+  text-transform: uppercase;
+  font-weight: 600;
+  background: rgba(0,0,0,0.4);
+}
+
+.highlight a:hover {
+  text-decoration: none;
+  color: #fff;
+  background:rgb(85, 255, 0);
+  border-radius: 5px;
+  border:1px solid rgb(85, 255, 0);
+  border-bottom:3px solid rgb(85, 255, 0);
+}
+
+
+/*------------------Alert box---------------*/
+
+/*dialog {  
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 150px;  
+    background:rgb(85,255,0);
+    border: 1px solid rgb(85,255,0);
+    font-family:sans-serif;
+    font-size:0.8rem;
+    text-align: center;
+    padding: 5px;
+} 
+dialog p {
+  border-bottom: 1px solid white;
+  color: white;
+}*/
+
+
+/*------------------Parallax effect---------------*/
+
+
+
+.parallax { 
+    /* The image used */
+    background-image: url("../images_renters/artificial-intelligence.jpg");
+
+    /* Set a specific height */
+    height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax2 { 
+    /* The image used */
+    background-image: url("../images_renters/background_image3.png");
+
+    /* Set a specific height */
+    height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*------------------End Parallax effect---------------*/
+.introduction {
+  height: 15rem;
+/*  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);*/
+  background: url("../images_renters/artificial-intelligence.png") no-repeat;
+  background-size: cover;
+}
+
+.introduction2 {
+  height: 15rem;
+/*  -webkit-clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+  clip-path: polygon(50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);*/
+  background: url("../images_renters/artificial-intelligence1.png") no-repeat;
+  background-size: cover;
+}
+
+.video {
+  background:rgba(0,128,128,1);
+  color: white;
+  margin:auto;
+  padding: 40px 40px 0px 40px;
+}
+.page3 {
+  background: url("../images_renters/background_image3.png") ;
+  background-position: center;
+  background-size: cover;
+  z-index: 50;
+}
+
+* { color:#fff; text-decoration: none;}
+
+h1 {
+  font-family: monospace;
+  background-color: black;
+  font-size: 2.5rem;
+  padding: 10px;
+}
+h2 {
+  margin: 0;
+  padding: 0 50px;
+  background-color: black;
+  font-size: 1.3rem;
+  color: deepskyblue;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-family: "avenir";
+}
+h3 {
+  font-size: 1.8rem;
+  padding: 10px;
+  color: deepskyblue;
+  font-weight: 400;
+  font-family: "frutiger";
+}
+h3 span {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: deepskyblue;
+    font-style: underline;
+    border-bottom: 2px solid deepskyblue;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+}
+h4 {
+  margin-bottom: 40px;
+  font-family: "frutiger";
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+h5{
+  color: black;
+  font-weight: 500;
+}
+
+h6 {
+  font-family: "futura";
+  font-size: 1.3rem;
+  font-weight: 300;
+/*  color: #82878C;*/
+  font-style: italic;
+  margin: 2rem;
+  color: grey;
+  background-color: white;
+/*  margin: -.4rem auto 2rem;*/
+}
+
+p {
+  display: block;
+  color: black;
+  line-height: 1.3rem;
+}
+
+.how-section {
+  margin-top:50px;
+}
+.align {
+  text-align:center; 
+  vertical-align: middle;
+  display: table-cell;   
+  margin: 20px 0;
+}
+
+/*Hamburger menu*/
+.nav-icon,
+.nav-icon:before,
+.nav-icon:after {
+  content:"";
+  position:absolute;
+  right:1.5em;
+  width:2em;
+  height:2em;
+  border-top:0.25em solid rgba(0,155,155,0.9);
+}
+.nav-icon {
+  display:none;
+  top:0.75em;
+  margin-top: 1em;
+}
+
+.nav-icon:before {
+  top:0.3em;
+  right:0;
+}
+.nav-icon:after {
+  top:0.85em;
+  right:0;
+}
+
+/*-----------------------------------End hamburger menu---------------------------*/
+
+
+/*@media screen and (max-width: 687px) {
+
+}*/
+
+/* max-width 1024px or 63.9375em */
+@media screen and (max-width: 63.9375em) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h6 {
+    margin:0.5rem;
+    font-size: 1.2rem;
+  }
+  .cl-effect-20 a span {
+  font-size: 0.7rem;
+  line-height: 1.8em;
+  }
+}
+
+@media screen and (max-width:39.9375em){
+  .how-section {
+  margin:10px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+    h2 {
+    font-size: 0.9rem;
+  }
+    .nav-icon { 
+    display:inline-block; 
+  }
+  .top-bar-right {
+    float: right;
+   }
+  .top-bar-right ul{
+    display:none;
+    list-style:none;
+  }
+  .top-bar-right ul li {
+    display:block;
+    margin:0.25em 1.5em;
+    text-align: center;
+  }
+  h6 {
+    margin:0.5rem;
+    font-size: 1rem;
+  }
+  .parallax, .parallax2 {
+    display: none;
+  }
+
+  .cl-effect-20 a span {
+  width: 100%;
+  }
+
+}
+
+
+.widget-input-radio {
+    display: inline-block;
+    clear: left;
+    width: 13px;
+    height: 13px;
+    margin-top: 0px;
+    margin-right: 3px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    vertical-align: middle;
+}
+.radio {
+	margin-bottom: 20px;
+}
+.banner {
+	padding:15px 0 0 0;
+	background: black;
+}
+
+.banner1 {
+  padding:10px 0 0 0;
+  margin: 20px;
+}
+.banner1 p {
+  font-family: "futura";
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #82878C;
+  font-style: italic;
+/*  margin: -.4rem auto 2rem;*/
+}
+
+.banner1 p span {
+  font-size: 1.4rem:;
+  font-weight: 600;
+  color: rgba(0,155,155,0.9);
+}
+.shadow-p {
+  padding: 20px;
+  display: block;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+#how, .banner p {
+	color: white;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+
+.features-list {
+	text-align: right;
+  background-color: lightgrey;
+  padding-top: 20px;
+}
+
+.home-icon {
+	width:40px;
+	float: right;
+}
+.app-screenshot {
+	width:100%;
+/*	padding: 10px;
+	margin:10px;*/
+	float: left;
+}
+.icon {
+	width:40px;
+  float: left;
+}
+
+.text-center {
+	text-align: center;	
+}
+
+
+.form-section {
+	background-color: rgba(0,128,128,1);
+	padding: 20px;
+}
+.form {
+	background-color: #ccc;
+	padding: 20px 0;
+	border-radius: 20px;
+}
+.footer {
+	background-color: black;
+	color: white;
+	padding: 20px;
+}
+.footer p {
+  color: deepskyblue;
+}
+
+
+
+
+// The following are SCSS variables to automate some of the values.
+// But don't feel limited by them. Change/replace whatever you want. 
+
+// The color of icons, text, and the big play button border.
+// Try changing to #0f0
+$primary-foreground-color: #fff; // #fff default
+
+// The default color of control backgrounds is mostly black but with a little
+// bit of blue so it can still be seen on all-black video frames, which are common.
+// Try changing to #900
+$primary-background-color: #2B333F;  // #2B333F default
+
+// Try changing to true
+$center-big-play-button: false; // true default
+
+.video-js {
+  /* The base font size controls the size of everything, not just text.
+     All dimensions use em-based sizes so that the scale along with the font size.
+     Try increasing it to 15px and see what happens. */
+  font-size: 10px;
+
+  /* The main font color changes the ICON COLORS as well as the text */
+  color: $primary-foreground-color;
+}
+
+/* The "Big Play Button" is the play button that shows before the video plays.
+   To center it set the align values to center and middle. The typical location
+   of the button is the center, but there is trend towards moving it to a corner
+   where it gets out of the way of valuable content in the poster image.*/
+.vjs-default-skin .vjs-big-play-button {
+  /* The font size is what makes the big play button...big. 
+     All width/height values use ems, which are a multiple of the font size.
+     If the .video-js font-size is 10px, then 3em equals 30px.*/
+  font-size: 3em;
+
+  /* We're using SCSS vars here because the values are used in multiple places.
+     Now that font size is set, the following em values will be a multiple of the
+     new font size. If the font-size is 3em (30px), then setting any of
+     the following values to 3em would equal 30px. 3 * font-size. */
+  $big-play-width: 3em; 
+  /* 1.5em = 45px default */
+  $big-play-height: 1.5em;
+
+  line-height: $big-play-height;
+  height: $big-play-height;
+  width: $big-play-width;
+
+  /* 0.06666em = 2px default */
+  border: 0.06666em solid $primary-foreground-color;
+  /* 0.3em = 9px default */
+  border-radius: 0.3em;
+
+  @if $center-big-play-button {
+    /* Align center */
+    left: 50%;
+    top: 50%;
+    margin-left: -($big-play-width / 2);
+    margin-top: -($big-play-height / 2);   
+  } @else {
+    /* Align top left. 0.5em = 15px default */
+    left: 0.5em;
+    top: 0.5em;
+  }
+}
+
+/* The default color of control backgrounds is mostly black but with a little
+   bit of blue so it can still be seen on all-black video frames, which are common. */
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  /* IE8 - has no alpha support */
+  background-color: $primary-background-color;
+  /* Opacity: 1.0 = 100%, 0.0 = 0% */
+  background-color: rgba($primary-background-color, 0.7);
+}
+
+// Make a slightly lighter version of the main background
+// for the slider background.
+$slider-bg-color: lighten($primary-background-color, 33%);
+
+/* Slider - used for Volume bar and Progress bar */
+.video-js .vjs-slider {
+  background-color: $slider-bg-color;
+  background-color: rgba($slider-bg-color, 0.5);
+}
+
+/* The slider bar color is used for the progress bar and the volume bar
+   (the first two can be removed after a fix that's coming) */
+.video-js .vjs-volume-level,
+.video-js .vjs-play-progress,
+.video-js .vjs-slider-bar {
+  background: $primary-foreground-color;
+}
+
+/* The main progress bar also has a bar that shows how much has been loaded. */
+.video-js .vjs-load-progress {
+  /* For IE8 we'll lighten the color */
+  background: lighten($slider-bg-color, 25%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba($slider-bg-color, 0.5);
+}
+
+/* The load progress bar also has internal divs that represent
+   smaller disconnected loaded time ranges */
+.video-js .vjs-load-progress div {
+  /* For IE8 we'll lighten the color */
+  background: lighten($slider-bg-color, 50%);
+  /* Otherwise we'll rely on stacked opacities */
+  background: rgba($slider-bg-color, 0.75);
+}
+
+
+
+
+
+video { 
+    display: inline-block;
+    min-width: 250px;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+ 	  background:  url("../images_renters/hh-logo.jpeg") no-repeat;
+  	background-size: cover;
+  	transition: 1s opacity;
+    margin-bottom: 50px;
+}
+
+.button.success {
+  margin:20px;
+  border-radius: 10px;
+}
+
+
+/*play/pause button goes here*/
+
+.footer .home-social a.mail {
+    background-position: center -400px;
+}
+
+.footer .home-social a {
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+.footer .hh-links {
+     margin: 0; 
+    display: inline-block;
+    padding-bottom: 0px;
+}
+.footer ul {
+  text-align: left;
+  list-style-type: none;
+
+}
+.footer li {
+  float: left;
+  line-height: 1.6rem;
+}
+.footer a {
+  line-height: inherit;
+  color: rgba(0,155,155,155,0.9);
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.footer .home-social a.facebook {
+    background: url(../img-social/webicon-facebook-m.png) no-repeat center 0;
+    padding: 10px;
+}
+
+.footer .home-social a.twitter {
+    background: url(../img-social/webicon-twitter-m.png) no-repeat center 0;
+    padding: 10px;
+}
+
+.footer .home-social a.mail {
+    background: url(../img-social/webicon-mail-m.png) no-repeat center 0;
+    padding: 10px;
+}
+
+/* utils */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
